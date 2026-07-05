@@ -125,7 +125,7 @@ Security was the primary focus while designing this project.
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/password-manager.git
+git clone https://github.com/PranaySehgal/Password-Manager.git
 cd password-manager
 ```
 
