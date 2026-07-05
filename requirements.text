@@ -1,0 +1,16 @@
+sqlalchemy
+base64
+cryptography
+winreg
+os
+uuid
+dotenv
+hashlib
+re
+base64
+datetime
+time
+tabulate
+pyperclip
+argon2
+random
