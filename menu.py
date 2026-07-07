@@ -8,6 +8,7 @@ from updateMasterPassword import *
 from os import system
 from time import sleep
 from deleteUser import *
+from export import *
 from passwordRecognizerAndGenerator import *
 """
 This is the function that runs all the other functions as per user requests
@@ -64,9 +65,13 @@ def menu(UUID,cipher,email):
                 return
             elif 'help' in x or 'support' in x or '/?' in x:
                 print("Try Using The Following Commands: ")
-                print("""Create Password\nFetch Accounts\nChange Password\nDelete Password\nChange Master Password \nVault  Report\nDelete User""")
+                print("""Create Password\nFetch Accounts\nChange Password\nDelete Password\nChange Master Password \nVault  Report\nDelete User\nexport passwords\nimport passwords""")
             elif 'logout' in x or 'signout' in x or 'exit' in x or 'close' in x:
                 return
+            elif 'export' in x and ('passwords' in x or 'password' in x):
+                export(UUID,cipher)
+            elif ('load' in x or 'import' in x) and ('password' in x or'passwords' in x or 'backup' in x):
+                importPasswords()
             else:
                 print("Sorry! I could not understand. Pls Try Again")
 

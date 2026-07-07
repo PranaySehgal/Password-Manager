@@ -68,3 +68,4 @@ def init():
     del val
     menu(VAULT_UUID,cipher,email)
 init()
+0

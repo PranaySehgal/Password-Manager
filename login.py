@@ -26,7 +26,7 @@ def login(password,hash):
             print("Sorry, Due to repetitive password attempts, you have been locked out of the profile for 60 seconds: \n Attempts Remaining: 2")
             time.sleep(60)
         elif attempts==5:
-            print("Sorry, Due to repetitive password attempts, you have been locked out of the profile for 60 seconds: \n Attempts Remaining: 1")
+            print("Sorry, Due to repetitive password attempts, you have been locked out of the profile for 300 seconds: \n Attempts Remaining: 1")
             time.sleep(300)
         elif attempts==6:
             print("Sorry, Due to repetitive password attempts, you have been locked out of the profile. \n Attempts Remaining: 0")
